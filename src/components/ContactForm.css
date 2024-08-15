@@ -1,0 +1,90 @@
+.contact-form-section {
+  padding: 50px;
+  background-color: #F4F4F3;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-form-section h2 {
+  font-size: 48px; /* Increased font size */
+  color: #505050;
+  margin-bottom: 20px;
+}
+
+.contact-form-section p {
+  font-size: 20px; /* Increased font size */
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.contact-form-section a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form-section a:hover {
+  text-decoration: underline;
+}
+
+.contact-form-section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-form-section .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-section .form-group label {
+  font-size: 18px; /* Increased font size */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form-section .form-group input,
+.contact-form-section .form-group textarea {
+  padding: 15px; /* Increased padding */
+  border-radius: 25px; /* Adjusted for rounded input fields */
+  border: 2px solid #ccc; /* Thicker border */
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.contact-form-section .form-group input:focus,
+.contact-form-section .form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.contact-form-section .form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form-section button {
+  grid-column: 1 / -1; /* Span both columns */
+  padding: 15px 0; /* Adjusted padding for button */
+  background-color: #000; /* Set to black for matching screenshot */
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-section button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .contact-form-section form {
+    grid-template-columns: 1fr; /* Stack inputs on smaller screens */
+  }
+}

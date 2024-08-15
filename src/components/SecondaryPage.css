@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #F4F4F3;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.content-wrapper {
+  padding: 10px 30px;
+}
+
+.privacy-policy {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow-y: auto; /* Ensure the content is scrollable */
+}
+
+.secondary-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  overflow-y: auto; /* Ensure the content is scrollable */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h1 .blue {
+  color: #74B9FF; /* Your app's specific blue color for "Privacy" */
+}
+
+h1 .gray {
+  color: #505050; /* Specific gray color for "policy" */
+}
+
+h2 {
+  font-size: 24px;
+  color: #505050;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+a {
+  color: #74B9FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.heading {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #74B9FF; /* Your app's specific blue color */
+  font-weight: bold;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.trailing-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

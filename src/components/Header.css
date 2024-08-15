@@ -1,0 +1,98 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #F4F4F3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  z-index: 1000; /* Ensure it's above the content */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #505050;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #505050;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #74B9FF;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+  color: #74B9FF;
+}
+
+.hamburger {
+  display: none; /* Hidden by default (visible only on mobile) */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100; /* Higher than the nav-links */
+}
+
+.hamburger-icon {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+}
+
+.hamburger:hover,
+.hamburger-icon:hover {
+  /* Ensure no hover effects */
+  background: none;
+  border: none;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 243, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile screens */
+  }
+}
