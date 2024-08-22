@@ -44,13 +44,13 @@ const PrivacyPolicy = () => {
         <li><strong>Correction:</strong> Request corrections to any inaccurate or incomplete information.</li>
         <li><strong>Deletion:</strong> Request the deletion of your personal information.</li>
       </ul>
-      <p>To exercise these rights, please contact us at <a href="mailto:simon.roetzer@gmail.com">simon.roetzer@gmail.com</a>.</p>
+      <p>To exercise these rights, please contact us at <a href="mailto:data@spatialreminders.ca">data@spatialreminders.ca</a>.</p>
 
       <h2>6. Changes to This Privacy Policy</h2>
       <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.</p>
 
       <h2>7. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy or how we handle your information, please contact us at <a href="mailto:simon.roetzer@gmail.com">simon.roetzer@gmail.com</a>.</p>
+      <p>If you have any questions about this Privacy Policy or how we handle your information, please contact us at <a href="mailto:hello@spatialreminders.ca">hello@spatialreminders.ca</a>.</p>
     </div>
   );
 };

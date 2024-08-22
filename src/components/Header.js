@@ -15,7 +15,9 @@ const Header = () => {
     <>
       <header className="site-header">
         <div className="logo-container">
-          <img src={logo} alt="Spatial Reminders Logo" className="logo" />
+          <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>
+            <img src={logo} alt="Spatial Reminders Logo" className="logo" />
+          </Link>
           <Link to="/about" className="site-title" onClick={() => setIsMobileMenuOpen(false)}>
             Spatial Reminders
           </Link>

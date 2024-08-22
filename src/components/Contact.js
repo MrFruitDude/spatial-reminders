@@ -10,7 +10,6 @@ const Contact = () => {
       </p>
       <p>
         <a href="mailto:hello@spatialreminders.com">hello@spatialreminders.com</a><br />
-        (123) 456-7890
       </p>
     </div>
   );

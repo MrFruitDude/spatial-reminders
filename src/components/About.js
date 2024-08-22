@@ -15,7 +15,7 @@ const About = () => {
         We're excited to contribute to the Vision Pro ecosystem by providing a simple, yet innovative tool that helps you stay organized in a way that feels natural and integrated into your surroundings.
       </p>
       <p>
-        With <span className="highlight">Spatial Reminders</span>, we're just aiming to make your day a little easier and more productive.
+        With <span className="highlight">Spatial Reminders</span>, we’re aiming to streamline your productivity to make your day (and life!) easier.
       </p>
       <div className="image-container">
         <img src={screenshotTrailing} alt="App screenshot" className="trailing-image" />
