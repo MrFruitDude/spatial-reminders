@@ -1,107 +1,544 @@
+/* Global Font Setup */
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
   background-color: #F4F4F3;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-x: hidden;
 }
 
-.content-wrapper {
-  padding: 10px 30px;
+/* Ensure the hero-section uses Flexbox */
+.hero-section-alt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative; /* Relative positioning to allow absolute positioning of the image */
+  min-height: 100vh; /* Ensure the section takes the full height of the viewport */
+  padding-bottom: 0; /* Remove bottom padding */
+  margin-bottom: 0;
 }
 
-.privacy-policy {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  overflow-y: auto; /* Ensure the content is scrollable */
-}
 
+/* Section Styling */
 .secondary-page {
-  max-width: 900px;
+  background: radial-gradient(circle, rgba(37, 58, 100, 1) 0%, rgba(24, 36, 62, 1) 100%);
+  padding: 80px 30px;
+  min-height: 100vh;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  /* Prevents horizontal scrolling */
+}
+
+.feature-section {
+  background: radial-gradient(circle at 120% 40%, rgba(252, 248, 255, 0.3) 0%, rgba(255, 255, 255, 1) 100%);
+  padding: 80px 30px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.gradient-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.1;
+  background: linear-gradient(180deg, #89c4ff, #74B9FF); /* Define your gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Ensure the text color is transparent */
+}
+
+.dark-section {
+  background: radial-gradient(circle, rgba(24, 36, 62, 1) 0%, rgba(15, 25, 43, 1) 100%);
+  padding: 80px 30px;
+  min-height: 100vh;
+  color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  /* Prevents horizontal scrolling */
+}
+
+.bright-section {
+  background: radial-gradient(circle at 120% 40%, rgba(243, 235, 255, 0.102) 0%, rgba(245, 245, 245, 1) 100%);
+  padding: 80px 30px;
+  min-height: 95vh;
+  color: #000000;
+  /* Dark font color */
+  text-align: left;
+  overflow: hidden;
+  /* Prevents horizontal scrolling */
+}
+
+.apple-love-logo {
+  display: inline-block;
+  width: 50vw; /* Default width */
+  height: auto;
+  object-fit: contain;
   margin: 20px auto;
-  padding: 20px;
-  overflow-y: auto; /* Ensure the content is scrollable */
+  padding: 10px;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+
+/* Typography */
+.white-headline {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.1;
 }
 
-h1 .blue {
-  color: #74B9FF; /* Your app's specific blue color for "Privacy" */
+.white-subheadline {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 1rem;
 }
 
-h1 .gray {
-  color: #505050; /* Specific gray color for "policy" */
+.white-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
 }
 
-h2 {
-  font-size: 24px;
-  color: #505050;
-  margin-bottom: 10px;
+.black-headline {
+  color: #000000;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1.1;
 }
 
-p {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
+.black-subheadline {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 1rem;
 }
 
-strong {
-  font-weight: bold;
+.dark-font {
+  color: rgba(0, 0, 0, 0.85);
 }
 
-ul {
-  margin-left: 20px;
-  margin-bottom: 20px;
+.feature-list.dark-font li {
+  color: rgba(0, 0, 0, 0.85);
 }
 
-ul li {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #666;
-}
-
-a {
-  color: #74B9FF;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.last-updated {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.heading {
-  font-size: 22px;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: bold;
+.large-headline {
+  font-size: 3.5rem;
 }
 
 .highlight {
-  color: #74B9FF; /* Your app's specific blue color */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.black-description {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* Buttons, Images, and Layout */
+.download-button {
+  background-color: #74B9FF;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
   font-weight: bold;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.feature-image {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image-alt {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image-alt-left {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -50%;
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 0%; /* Maintain 16:9 aspect ratio */
+  overflow: hidden;
+  background: #000;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+}
+
+.video-container video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.scroll-video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+.scroll-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .image-container {
+  margin-top: 60px;
   text-align: center;
-  margin-top: 30px;
+  position: relative;
+  border-radius: 20px;
 }
 
-.trailing-image {
+.app-screenshot {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blue {
+  color: #74B9FF;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.bright-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+
+.feature-icon {
+  width: 1.25em; /* Relative size based on the font size */
+  height: auto; /* Maintain aspect ratio */
+  align-self: center;
+}
+
+.feature-icon-text {
+  width: 2em; /* Relative size based on the font size */
+  height: auto; /* Maintain aspect ratio */
+  padding-right: 5%;
+  padding-top: 1%;
+  align-items: center;
+}
+
+.feature-headline {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.782);
+  font-size: 1rem; /* Adjust font size as needed */
+  margin: 0;
+}
+
+/* Bottom Image Container */
+.bottom-image-container {
+  position: relative;
+  width: 100%;
+  height: 30vh; /* Adjust the height to your desired size */
+  text-align: center;
+  background-size: contain; /* Ensures the image scales correctly */
+  background-repeat: no-repeat;
+  background-position: center bottom; /* Keeps the image at the bottom center */
+  z-index: 2; /* Ensure it stays on top of the background */
+}
+
+/* Bottom Image Styling */
+.bottom-image {
+  width: 80%;
+  max-width: 1200px; /* Control the maximum width */
+  border-radius: 0; /* Remove border-radius to align to the edge */
+  margin: 0; /* Remove any margin */
+}
+
+.feature-item {
+  display: flex;
+  align-items: center; /* Vertically aligns the icon and headline */
+  gap: 10px; /* Space between the icon and text */
+}
+
+.feature-description {
+  margin: 0px 0 0;
+  padding-left: 0; /* Ensure no padding on the left */
+  padding-bottom: 50px;
+  padding-top: 10px;
+  color:rgba(0, 0, 0, 0.63)
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  .bottom-image-container {
+    height: 25vh; /* Adjust height for mobile */
+    background-size: cover; /* Cover the container completely */
+    background-position: center bottom;
+  }
+
+  .apple-love-logo {
+    width: 70vw; /* Increase width to 70% of the viewport width on mobile devices */
+  }
+
+  .white-headline,
+  .black-headline, .gradient-text {
+    font-size: 2.5rem; /* Reduced by 1rem for mobile */
+  }
+
+  .white-subheadline,
+  .black-subheadline {
+    font-size: 1rem; /* Slightly smaller subheadline on mobile */
+  }
+
+  .video-container,
+  .scroll-video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; /* 1:1 aspect ratio for mobile */
+    overflow: hidden;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+  }
+
+  .video-container video,
+  .scroll-video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures the video covers the entire container */
+    object-fit: cover; /* This will cover the container without black bars */
+    border-radius: 20px;
+  }
+
+  .image-container,
+  .app-screenshot {
+    width: 100%;
+    padding-bottom: 100%; /* Make images square */
+    height: 0;
+    margin-top: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .white-description,
+  .black-description {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+
+  .feature-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    border-radius: 20px;
+  }
+
+  .feature-icon-text {
+    width: 2em; /* Relative size based on the font size */
+    height: auto; /* Maintain aspect ratio */
+    padding-right: 5%;
+    padding-top: 1%;
+    align-items: center;
+  }
+
+  .feature-image-alt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    border-radius: 20px;
+  }
+
+    .feature-image-alt-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    border-radius: 20px;
+  }
+
+  .hero-section-alt {
+    flex-direction: column; /* Stack text and video vertically */
+    align-items: center;
+  }
+
+  .video-container, .hero-text {
+    max-width: 100%;
+  }
+
+
+
+
+
+
+}
+
+/* Desktop-specific adjustments */
+@media (min-width: 768px) {
+
+  .bottom-image-container {
+    height: 40vh; /* Adjust height for desktop */
+    background-size: contain; /* Maintain aspect ratio */
+    background-position: center bottom;
+  }
+
+  .hero-text {
+    padding-right: 5%;
+  }
+  .bright-feature-list .feature-item {
+    align-items: flex-start; /* Align text to the top of the icon */
+  }
+
+  .bright-feature-list .feature-headline {
+    font-size: 1.25rem; /* Slightly larger on desktop */
+  }
+
+  .bright-feature-list .feature-description {
+    font-size: 1rem;
+  }
+
+  .video-container,
+  .scroll-video-container {
+    padding-bottom: 0%; /* 16:9 aspect ratio for desktop */
+  }
+
+  .video-container video,
+  .scroll-video-container video {
+    object-fit: cover; /* Maintain cover mode to ensure the video fills the container */
+  }
+
+  .secondary-page,
+  .dark-section,
+  .bright-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .image-container {
+    flex: 1;
+    margin-top: 0;
+    text-align: right;
+    border-radius: 20px;
+  }
+
+  .app-screenshot {
+    max-width: 120%;
+    position: relative;
+    right: 0%;
+  }
+
+  .meet-spatial-reminders .image-container {
+    text-align: center;
+  }
+
+  /* Specific to dark-section and secondary-page (text on the left, image on the right) */
+  .secondary-page .hero-section,
+  .dark-section .hero-section {
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .secondary-page .image-container,
+  .dark-section .image-container {
+    text-align: right;
+  }
+
+  .feature-image {
+    max-width: 80%;
+  }
+
+  .feature-image-alt {
+    margin-left: 20%;
+    max-width: 160%;
+  }
+
+  .feature-image-alt-left {
+    margin-right: 20%;
+    max-width: 130%;
+  }
+
+  /* Specific to bright-section (image on the left, text on the right) */
+  .bright-section {
+    flex-direction: row-reverse;
+    /* This flips the orientation */
+  }
+
+  .bright-section .hero-section {
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .bright-section .image-container {
+    text-align: left;
+  }
+
+  .bright-section .app-screenshot {
+    max-width: 135%;
+    position: relative;
+    left: -40%;
+  }
+
+  .scroll-video-container {
+    right: -20%;
+  }
 }
