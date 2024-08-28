@@ -12,7 +12,6 @@ import recurrenceRules from '../assets/recurrencePatterns_01.jpg';
 import widgetImage from '../assets/widgetImage.png'; // Common video
 import widgetImage_02 from '../assets/widgetImage.jpg'; // Common video
 
-import visionPro from '../assets/visionPro.png'; // Common video
 
 
 import pinIcon from '../assets/pin_icon_transparent.png'; // Adjust path as necessary
