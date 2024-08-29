@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import './SecondaryPage.css';
 import './Footer.css';
 
 
 import folderRoom from '../assets/folder_room_02.png'; // Adjust path as necessary
-import featureWalkthroughDesktop from '../assets/SR_featureWalkthrough_v06_1x1.mp4'; // Desktop video
-import featureWalkthroughMobile from '../assets/SR_featureWalkthrough_mobile.mp4'; // Mobile video
+import featureWalkthroughDesktop from '../assets/SR_featureWalkthrough_v06_1x1_01.mp4'; // Desktop video
+import featureWalkthroughMobile from '../assets/SR_featureWalkthrough_mobile_01.mp4'; // Mobile video
 
 import dragDropVideoDesktop from '../assets/dragDropMain_02.mp4'; // Desktop video
 import dragDropVideoMobile from '../assets/dragDropMain_mobile.mp4'; // Mobile video
@@ -193,16 +195,16 @@ const About = () => {
         </div>
       </div>
 
-      {/* Section 7: Footer with Links */}
-      <div className="footer-section">
-        <div className="footer-container">
-          <p className="footer-text">© 2024 Spatial Reminders. All Rights Reserved.</p>
-          <div className="footer-links">
-            <a href="/contact" className="footer-link">Contact</a>
-            <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
+{/* Section 7: Footer with Links */}
+<div className="footer-section">
+  <div className="footer-container">
+    <p className="footer-text">© 2024 Spatial Reminders. All Rights Reserved.</p>
+    <div className="footer-links">
+      <Link to="/contact" className="footer-link">Contact</Link>
+      <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+    </div>
+  </div>
+</div>
     </>
   );
 };
