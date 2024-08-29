@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './SecondaryPage.css';
+import './Footer.css';
+
 
 import folderRoom from '../assets/folder_room_02.png'; // Adjust path as necessary
 import featureWalkthroughDesktop from '../assets/SR_featureWalkthrough_v06_1x1.mp4'; // Desktop video
@@ -58,28 +60,28 @@ const About = () => {
 
   return (
     <>
-{/* Section 1: Hero */}
-<div className="secondary-page">
-  <div className="hero-section-alt">
-    <div className="hero-text">
-      <h1 className="white-headline">Meet <span className="gradient-text">Spatial Reminders.</span></h1>
-      <p className="white-description">
-        The revolutionary way to organize your life with Vision Pro. Replace scattered sticky notes with virtual tasks that live where they matter most.
-      </p>
-      <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="download-button">Download Now</a>
-    </div>
-    <div className="video-container">
-      <video
-        src={isMobile ? featureWalkthroughMobile : featureWalkthroughDesktop}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="feature-video"
-      ></video>
-    </div>
-  </div>
-</div>
+      {/* Section 1: Hero */}
+      <div className="secondary-page">
+        <div className="hero-section-alt">
+          <div className="hero-text">
+            <h1 className="white-headline">Meet <span className="gradient-text">Spatial Reminders.</span></h1>
+            <p className="white-description">
+              The revolutionary way to organize your life with Vision Pro. Replace scattered sticky notes with virtual tasks that live where they matter most.
+            </p>
+            <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="download-button">Download Now</a>
+          </div>
+          <div className="video-container">
+            <video
+              src={isMobile ? featureWalkthroughMobile : featureWalkthroughDesktop}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="feature-video"
+            ></video>
+          </div>
+        </div>
+      </div>
 
       {/* Section 2: Feature - Spatial Organization */}
       <div className="feature-section">
@@ -187,6 +189,17 @@ const About = () => {
               playsInline
               className="feature-video"
             ></video>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 7: Footer with Links */}
+      <div className="footer-section">
+        <div className="footer-container">
+          <p className="footer-text">© 2024 Spatial Reminders. All Rights Reserved.</p>
+          <div className="footer-links">
+            <a href="/contact" className="footer-link">Contact</a>
+            <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
           </div>
         </div>
       </div>

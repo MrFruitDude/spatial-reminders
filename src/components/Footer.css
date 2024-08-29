@@ -1,0 +1,31 @@
+.footer-section {
+    background: radial-gradient(circle, rgba(37, 58, 100, 1) 0%, rgba(24, 36, 62, 1) 100%);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-text {
+    color: #fff; /* White text color */
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #74B9FF; /* Use your preferred link color */
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
