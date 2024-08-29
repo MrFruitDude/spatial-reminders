@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/logo.png'; // Adjust the path based on your structure
 
@@ -7,9 +8,9 @@ const Header = () => {
     <>
       <header className="site-header">
         <div className="logo-container">
-          <a href="/about">
+          <Link to="spatial-reminders/about">
             <img src={logo} alt="Spatial Reminders Logo" className="logo" />
-          </a>
+          </Link>
         </div>
         <div className="download-container">
           <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="download-button">

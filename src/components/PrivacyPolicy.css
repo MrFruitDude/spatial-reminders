@@ -58,6 +58,16 @@
   .privacy-policy a:hover {
     text-decoration: underline;
   }
+
+  .privacy-policy a[href^="mailto:"] {
+    color: #74B9FF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .privacy-policy a[href^="mailto:"]:hover {
+    text-decoration: underline;
+  }
   
   .last-updated {
     font-size: 0.875rem;

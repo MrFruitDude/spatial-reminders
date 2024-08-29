@@ -4,6 +4,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         {/* Fallback for unmatched routes */}
         <Route path="*" element={<Navigate to="/about" replace />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
