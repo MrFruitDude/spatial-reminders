@@ -1,6 +1,6 @@
 {
   "name": "spatial-reminders",
-  "homepage": "https://sptatialreminders.ca/spatial-reminders",  
+  "homepage": "https://sptatialreminders.ca/spatial-reminders",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
