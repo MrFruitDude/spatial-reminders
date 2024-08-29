@@ -1,6 +1,1 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/widget_01.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/SR_featureWalkthrough_mobile.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/SR_featureWalkthrough_v06.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/SR_featureWalkthrough_v06_1x1.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/featureVideo.mp4 filter=lfs diff=lfs merge=lfs -text
