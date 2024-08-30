@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router basename="/spatial-reminders">
+    <Router basename="/">
       <Header />
       <Routes>
         {/* Redirect from root path to /about */}
