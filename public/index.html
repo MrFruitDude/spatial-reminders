@@ -6,22 +6,33 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Spatial Reminders made for Vision Pro" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <meta name="description" content="Spatial Reminders made for Vision Pro, helping you organize your life with virtual tasks and reminders that live where they matter most." />
+  
+  <meta name="google-site-verification" content="5DvN3FG33cp9aM5nNwo0S79S7w8b0AMWiJ_gczOC218" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+  <!-- Keywords Meta Tag -->
+  <meta name="keywords" content="Spatial Reminders, Vision Pro, task management, productivity, Apple Reminders" />
+
+  <!-- Author Meta Tag -->
+  <meta name="author" content="Simon Rotzer" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spatial Reminders">
+  <meta property="og:description" content="The revolutionary way to organize your life with Vision Pro.">
+  <meta property="og:image" content="%PUBLIC_URL%/favicon.png">
+  <meta property="og:url" content="https://spatialreminders.ca">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="spatialreminders.ca">
+  <meta property="twitter:url" content="https://spatialreminders.ca">
+  <meta name="twitter:title" content="Spatial Reminders">
+  <meta name="twitter:description" content="The revolutionary way to organize your life with Vision Pro.">
+  <meta name="twitter:image" content="%PUBLIC_URL%/favicon.png">
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,21 +41,33 @@
     rel="stylesheet">
 
   <title>Spatial Reminders</title>
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Spatial Reminders",
+    "operatingSystem": "Vision Pro",
+    "applicationCategory": "Productivity",
+    "description": "Spatial Reminders helps you organize your life with Vision Pro by replacing scattered sticky notes with virtual tasks.",
+    "url": "https://spatialreminders.ca",
+    "author": {
+      "@type": "Person",
+      "name": "Simon Rotzer"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Simon Rotzer"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 
 </html>
