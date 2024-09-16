@@ -69,7 +69,7 @@ const About = () => {
             <p className="white-description">
               The revolutionary way to organize your life with Vision Pro. Replace scattered sticky notes with virtual tasks that live where they matter most.
             </p>
-            <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="download-button">Download Now</a>
+            <a href="https://apps.apple.com/app/spatial-reminders/id6502372575" className="download-button">Download Now</a>
           </div>
           <div className="video-container">
             <video

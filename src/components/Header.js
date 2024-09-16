@@ -13,7 +13,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="download-container">
-          <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="download-button">
+          <a href="https://apps.apple.com/app/spatial-reminders/id6502372575" className="download-button">
             Download Now
           </a>
         </div>
