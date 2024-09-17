@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="contact-form-section">
       <h2>Let's Chat!</h2>
       <p>
-        Got a question, a thought, or just want to say hi? We're all ears! Reach out and we'll sprinkle some magic on your queries. And don't worry, it’s as easy as pie to send your messages our way!
+      Have a question, feedback, or simply want to connect? We're here to help! Feel free to reach out, and we'll be happy to assist. Your inquiries are always welcome, and we're committed to providing prompt and thoughtful responses.
       </p>
       <p>
         <a href="mailto:hello@spatialreminders.com">hello@spatialreminders.com</a><br />
